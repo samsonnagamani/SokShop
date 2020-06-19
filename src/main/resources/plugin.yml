@@ -1,0 +1,8 @@
+name: SokShop
+version: ${project.version}
+main: me.samsonnagamani.sokshop.SokShop
+api-version: 1.13
+author: Samson Nagamani <samson.nagamani@gmail.com>
+depend: [GerConomy]
+softdepend: [GerConomy]
+description: Spigot GUI Shop plugin

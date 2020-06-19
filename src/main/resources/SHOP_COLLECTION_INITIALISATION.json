@@ -1,0 +1,344 @@
+[{
+  "_id": {
+    "$oid": "5ee24e0e8f7f2eab0679cd4a"
+  },
+  "name": "IRON_INGOT",
+  "sell_price": 5,
+  "buy_price": 15
+},{
+  "_id": {
+    "$oid": "5ee3d50e7ae485473b206a13"
+  },
+  "name": "IRON_BLOCK",
+  "sell_price": 45,
+  "buy_price": 135
+},{
+  "_id": {
+    "$oid": "5ee64ce820d35412b983747b"
+  },
+  "name": "GOLD_INGOT",
+  "sell_price": 15,
+  "buy_price": 45
+},{
+  "_id": {
+    "$oid": "5ee64d3d20d35412b983747c"
+  },
+  "name": "DIAMOND",
+  "sell_price": 30,
+  "buy_price": 90
+},{
+  "_id": {
+    "$oid": "5ee64e0b20d35412b983747d"
+  },
+  "name": "DIAMOND_BLOCK",
+  "sell_price": 270,
+  "buy_price": 810
+},{
+  "_id": {
+    "$oid": "5ee64e6f20d35412b983747e"
+  },
+  "name": "GOLD_BLOCK",
+  "sell_price": 135,
+  "buy_price": 405
+},{
+  "_id": {
+    "$oid": "5eeab5c59fd5be6fc02e5891"
+  },
+  "name": "OAK_LOG",
+  "sell_price": 50,
+  "buy_price": 150
+},{
+  "_id": {
+    "$oid": "5eeab5c59fd5be6fc02e5892"
+  },
+  "name": "DARK_OAK_LOG",
+  "sell_price": 50,
+  "buy_price": 150
+},{
+  "_id": {
+    "$oid": "5eeab5c59fd5be6fc02e5893"
+  },
+  "name": "SPRUCE_LOG",
+  "sell_price": 50,
+  "buy_price": 150
+},{
+  "_id": {
+    "$oid": "5eeab5c59fd5be6fc02e5894"
+  },
+  "name": "ACACIA_LOG",
+  "sell_price": 50,
+  "buy_price": 150
+},{
+  "_id": {
+    "$oid": "5eeab5c59fd5be6fc02e5895"
+  },
+  "name": "BIRCH_LOG",
+  "sell_price": 50,
+  "buy_price": 150
+},{
+  "_id": {
+    "$oid": "5eeab5c59fd5be6fc02e5896"
+  },
+  "name": "OAK_PLANKS",
+  "sell_price": 200,
+  "buy_price": 600
+},{
+  "_id": {
+    "$oid": "5eeab5c59fd5be6fc02e5897"
+  },
+  "name": "DARK_OAK_PLANKS",
+  "sell_price": 200,
+  "buy_price": 600
+},{
+  "_id": {
+    "$oid": "5eeab5c59fd5be6fc02e5898"
+  },
+  "name": "SPRUCE_PLANKS",
+  "sell_price": 200,
+  "buy_price": 600
+},{
+  "_id": {
+    "$oid": "5eeab5c59fd5be6fc02e5899"
+  },
+  "name": "ACACIA_PLANKS",
+  "sell_price": 200,
+  "buy_price": 600
+},{
+  "_id": {
+    "$oid": "5eeab5c59fd5be6fc02e589a"
+  },
+  "name": "BIRCH_PLANKS",
+  "sell_price": 200,
+  "buy_price": 600
+},{
+  "_id": {
+    "$oid": "5eeab5c59fd5be6fc02e589b"
+  },
+  "name": "WHITE_TERRACOTTA",
+  "sell_price": 50,
+  "buy_price": 150
+},{
+  "_id": {
+    "$oid": "5eeab5c59fd5be6fc02e589c"
+  },
+  "name": "ORANGE_TERRACOTTA",
+  "sell_price": 50,
+  "buy_price": 150
+},{
+  "_id": {
+    "$oid": "5eeab5c59fd5be6fc02e589d"
+  },
+  "name": "MAGENTA_TERRACOTTA",
+  "sell_price": 50,
+  "buy_price": 150
+},{
+  "_id": {
+    "$oid": "5eeab5c59fd5be6fc02e589e"
+  },
+  "name": "LIGHT_BLUE_TERRACOTTA",
+  "sell_price": 50,
+  "buy_price": 150
+},{
+  "_id": {
+    "$oid": "5eeab5c59fd5be6fc02e589f"
+  },
+  "name": "YELLOW_TERRACOTTA",
+  "sell_price": 50,
+  "buy_price": 150
+},{
+  "_id": {
+    "$oid": "5eeab5c59fd5be6fc02e58a0"
+  },
+  "name": "LIME_TERRACOTTA",
+  "sell_price": 50,
+  "buy_price": 150
+},{
+  "_id": {
+    "$oid": "5eeab5c59fd5be6fc02e58a1"
+  },
+  "name": "PINK_TERRACOTTA",
+  "sell_price": 50,
+  "buy_price": 150
+},{
+  "_id": {
+    "$oid": "5eeab5c59fd5be6fc02e58a2"
+  },
+  "name": "GRAY_TERRACOTTA",
+  "sell_price": 50,
+  "buy_price": 150
+},{
+  "_id": {
+    "$oid": "5eeab5c59fd5be6fc02e58a3"
+  },
+  "name": "LIGHT_GRAY_TERRACOTTA",
+  "sell_price": 50,
+  "buy_price": 150
+},{
+  "_id": {
+    "$oid": "5eeab5c59fd5be6fc02e58a4"
+  },
+  "name": "CYAN_TERRACOTTA",
+  "sell_price": 50,
+  "buy_price": 150
+},{
+  "_id": {
+    "$oid": "5eeab5c59fd5be6fc02e58a5"
+  },
+  "name": "PURPLE_TERRACOTTA",
+  "sell_price": 50,
+  "buy_price": 150
+},{
+  "_id": {
+    "$oid": "5eeab5c59fd5be6fc02e58a6"
+  },
+  "name": "BLUE_TERRACOTTA",
+  "sell_price": 50,
+  "buy_price": 150
+},{
+  "_id": {
+    "$oid": "5eeab5c59fd5be6fc02e58a7"
+  },
+  "name": "BROWN_TERRACOTTA",
+  "sell_price": 50,
+  "buy_price": 150
+},{
+  "_id": {
+    "$oid": "5eeab5c59fd5be6fc02e58a8"
+  },
+  "name": "GREEN_TERRACOTTA",
+  "sell_price": 50,
+  "buy_price": 150
+},{
+  "_id": {
+    "$oid": "5eeab5c59fd5be6fc02e58a9"
+  },
+  "name": "RED_TERRACOTTA",
+  "sell_price": 50,
+  "buy_price": 150
+},{
+  "_id": {
+    "$oid": "5eeab5c59fd5be6fc02e58aa"
+  },
+  "name": "BLACK_TERRACOTTA",
+  "sell_price": 50,
+  "buy_price": 150
+},{
+  "_id": {
+    "$oid": "5eecc1c524d5e84a7558679b"
+  },
+  "name": "TERRACOTTA",
+  "sell_price": 50,
+  "buy_price": 150
+},{
+  "_id": {
+    "$oid": "5eecc703a22f963694342dfc"
+  },
+  "name": "WHITE_CONCRETE",
+  "sell_price": 50,
+  "buy_price": 150
+},{
+  "_id": {
+    "$oid": "5eecc703a22f963694342dfd"
+  },
+  "name": "ORANGE_CONCRETE",
+  "sell_price": 50,
+  "buy_price": 150
+},{
+  "_id": {
+    "$oid": "5eecc703a22f963694342dfe"
+  },
+  "name": "MAGENTA_CONCRETE",
+  "sell_price": 50,
+  "buy_price": 150
+},{
+  "_id": {
+    "$oid": "5eecc703a22f963694342dff"
+  },
+  "name": "LIGHT_BLUE_CONCRETE",
+  "sell_price": 50,
+  "buy_price": 150
+},{
+  "_id": {
+    "$oid": "5eecc703a22f963694342e00"
+  },
+  "name": "YELLOW_CONCRETE",
+  "sell_price": 50,
+  "buy_price": 150
+},{
+  "_id": {
+    "$oid": "5eecc703a22f963694342e01"
+  },
+  "name": "LIME_CONCRETE",
+  "sell_price": 50,
+  "buy_price": 150
+},{
+  "_id": {
+    "$oid": "5eecc703a22f963694342e02"
+  },
+  "name": "PINK_CONCRETE",
+  "sell_price": 50,
+  "buy_price": 150
+},{
+  "_id": {
+    "$oid": "5eecc703a22f963694342e03"
+  },
+  "name": "GRAY_CONCRETE",
+  "sell_price": 50,
+  "buy_price": 150
+},{
+  "_id": {
+    "$oid": "5eecc703a22f963694342e04"
+  },
+  "name": "LIGHT_GRAY_CONCRETE",
+  "sell_price": 50,
+  "buy_price": 150
+},{
+  "_id": {
+    "$oid": "5eecc703a22f963694342e05"
+  },
+  "name": "CYAN_CONCRETE",
+  "sell_price": 50,
+  "buy_price": 150
+},{
+  "_id": {
+    "$oid": "5eecc703a22f963694342e06"
+  },
+  "name": "PURPLE_CONCRETE",
+  "sell_price": 50,
+  "buy_price": 150
+},{
+  "_id": {
+    "$oid": "5eecc703a22f963694342e07"
+  },
+  "name": "BLUE_CONCRETE",
+  "sell_price": 50,
+  "buy_price": 150
+},{
+  "_id": {
+    "$oid": "5eecc703a22f963694342e08"
+  },
+  "name": "BROWN_CONCRETE",
+  "sell_price": 50,
+  "buy_price": 150
+},{
+  "_id": {
+    "$oid": "5eecc703a22f963694342e09"
+  },
+  "name": "GREEN_CONCRETE",
+  "sell_price": 50,
+  "buy_price": 150
+},{
+  "_id": {
+    "$oid": "5eecc703a22f963694342e0a"
+  },
+  "name": "RED_CONCRETE",
+  "sell_price": 50,
+  "buy_price": 150
+},{
+  "_id": {
+    "$oid": "5eecc703a22f963694342e0b"
+  },
+  "name": "BLACK_CONCRETE",
+  "sell_price": 50,
+  "buy_price": 150
+}]
