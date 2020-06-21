@@ -37,44 +37,22 @@ public class MongoShop extends me.samsonnagamani.gerconomy.MongoConnect {
         }
 
         MessageManager.consoleGood("Shop Info Loaded!");
-
-
-
-//        if (plugin.mongoShop.getPlayerDataCollection().find(new Document("name", name)).first() == null) {
-//            Document playerdata = (Document) plugin.mongoShop.getPlayerDataCollection().find(new Document("name", name)).first();
-//            double sellPrice = playerdata.getDouble("sell_price");
-//            double buyPrice = playerdata.getDouble("buy_price");
-//
-//            plugin.shopManagerHashMap.put(name, new ShopManager(name, sellPrice, buyPrice));
-//
-//        } else {
-////            addNewProduct(material);
-//        }
     }
 
-//    private void addNewProduct(Material material) {
-//        String name = material.getData().getName();
-//        ShopManager shopManager = plugin.shopManagerHashMap.get(name);
-//
-//        // Initial sell/buy price of shop product is 0
-//        plugin.shopManagerHashMap.put(name, new ShopManager(name, 0, 0));
-//        MessageManager.consoleGood("Shop Info Loaded!");
-//
-//        MessageManager.consoleGood("Product " + name + " has been initialised");
-//
-//    }
 
     @Override
     public void loadPlayerData(Player player) {
-        UUID uuid = player.getUniqueId();
+        // If player has joined server before load their data
+        if (player.hasPlayedBefore()) {
+            UUID uuid = player.getUniqueId();
 
-        if (GerConomy.getPlugin().economyCore.hasAccount(uuid.toString())) {
-            Document playerdata = (Document) plugin.mongoShop.getPlayerDataCollection().find(new Document("uuid", uuid.toString())).first();
-            double balance = playerdata.getDouble("balance");
-            double bankaccount = playerdata.getDouble("bank_account");
+            if (GerConomy.getPlugin().economyCore.hasAccount(uuid.toString())) {
+                Document playerdata = (Document) plugin.mongoShop.getPlayerDataCollection().find(new Document("uuid", uuid.toString())).first();
+                double balance = playerdata.getDouble("balance");
 
-            plugin.playerManagerHashMap.put(uuid, new PlayerManager(uuid.toString(), balance, bankaccount));
-            MessageManager.playerInfo(player, "Player Info Loaded!");
+                plugin.playerManagerHashMap.put(uuid, new PlayerManager(uuid.toString(), balance));
+                me.samsonnagamani.gerconomy.MessageManager.playerInfo(player, "Player Info Loaded!");
+            }
         } else {
             addNewPlayer(player);
         }
@@ -82,26 +60,22 @@ public class MongoShop extends me.samsonnagamani.gerconomy.MongoConnect {
 
     @Override
     public void loadTeamData() {
-        Iterator<String> teamnames = GerConomy.getPlugin().teamManager.getTeamNames().iterator();
-        while (teamnames.hasNext()) {
-            String teamname = teamnames.next();
+        for (String teamname : GerConomy.getPlugin().teamManager.getTeamNames()) {
             Team team = board.getTeam(teamname);
             if (GerConomy.getPlugin().economyCore.hasTeamAccount(teamname)) {
                 Document teamdata = (Document) plugin.mongoShop.getTeamDataCollection().find(new Document("name", teamname)).first();
                 double balance = teamdata.getDouble("balance");
-                double bankaccount = teamdata.getDouble("bank_account");
 
+                // List of each player's uuid in a team
                 List<String> teamPlayerUuids = new ArrayList<>();
 
-                Iterator<String> players = team.getEntries().iterator();
-                while (players.hasNext()) {
-                    Player teamPlayer = plugin.getServer().getPlayer(players.next());
+                for (String playername : team.getEntries()) {
+                    Player teamPlayer = plugin.getServer().getPlayer(playername);
                     teamPlayerUuids.add(teamPlayer.getUniqueId().toString());
 //                    MessageManager.consoleInfo(teamPlayer.getUniqueId().toString());
                 }
 
-
-                plugin.teamManagerHashMap.put(teamname, new TeamManager(teamname, balance, bankaccount, teamPlayerUuids));
+                plugin.teamManagerHashMap.put(teamname, new TeamManager(teamname, balance, teamPlayerUuids));
 
             } else {
                 addNewTeam(team.getName());

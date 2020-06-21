@@ -2,12 +2,15 @@ package me.samsonnagamani.sokshop.MenuSystem;
 
 import me.samsonnagamani.gerconomy.Player.PlayerManager;
 import me.samsonnagamani.gerconomy.Team.TeamManager;
+import me.samsonnagamani.sokshop.MessageManager;
 import me.samsonnagamani.sokshop.SokShop;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.scoreboard.Team;
 
 import java.util.Iterator;
+import java.util.List;
+import java.util.Set;
 
 public class PlayerMenuUtility {
     private SokShop plugin = SokShop.getPlugin();
@@ -38,16 +41,17 @@ public class PlayerMenuUtility {
     public TeamManager getTeam() {
         PlayerManager playerManager = plugin.playerManagerHashMap.get(player.getUniqueId());
 
-        Iterator<Team> teams = Bukkit.getScoreboardManager().getMainScoreboard().getTeams().iterator();
+        Set<Team> teams = Bukkit.getScoreboardManager().getMainScoreboard().getTeams();
         String teamName = "";
 
-        while (teams.hasNext()) {
-            String name = teams.next().getName();
+        for (Team team : teams) {
+            String name = team.getName();
             if (playerManager.getTeam().equalsIgnoreCase(name)) {
                 teamName = name;
+                MessageManager.consoleInfo(teamName);
             }
         }
-        
+
         return plugin.teamManagerHashMap.get(teamName);
     }
 

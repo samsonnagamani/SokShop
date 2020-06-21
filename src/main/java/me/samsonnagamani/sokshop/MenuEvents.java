@@ -52,8 +52,7 @@ public class MenuEvents implements Listener {
 
         // Player has to be in world "world_sokshop" to access shops
         if (player.getWorld().getName().equalsIgnoreCase("world_sokshop") &&
-                state instanceof Sign &&
-                ((Sign) state).getLine(2).equalsIgnoreCase(ChatColor.GREEN + "Buy")) {
+                state instanceof Sign) {
 
             Sign sign = (Sign) state;
             String line0 = sign.getLine(0);
